@@ -913,18 +913,18 @@ $(document).ready(function(){
    
 
 
-        <!-- Team End -->
+        <!-- Team End --> 
 
       <!-- Testimonial Start -->
  <div class="container-fluid testimonial-section py-5">
     <div class="container py-3 py-lg-5">
-        <div class="text-center mx-auto mb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 800px;">
+        <div class="text-center mx-auto mb-5" style="max-width: 800px;">
             <h5 class="text-primary mb-3">Client Feedback</h5>
             <h1 class="display-5 mb-4">What Our Clients Say</h1>
             <p class="lead text-muted">Hear from businesses that have transformed with our solutions</p>
         </div>
         
-        <div class="testimonial-slider wow fadeIn" data-wow-delay=".5s">
+        <div class="owl-carousel testimonial-slider">
             <!-- Testimonial 1 -->
             <div class="testimonial-card">
                 <div class="testimonial-rating">
@@ -944,9 +944,7 @@ $(document).ready(function(){
                         <p>CEO, TechSolutions India</p>
                     </div>
                 </div>
-                <div class="testimonial-company">
-                    <img src="img/company-logo-1.png" alt="TechSolutions India" loading="lazy">
-                </div>
+                
             </div>
             
             <!-- Testimonial 2 -->
@@ -968,9 +966,7 @@ $(document).ready(function(){
                         <p>HR Director, HealthCare Plus</p>
                     </div>
                 </div>
-                <div class="testimonial-company">
-                    <img src="img/company-logo-2.png" alt="HealthCare Plus" loading="lazy">
-                </div>
+                
             </div>
             
             <!-- Testimonial 3 -->
@@ -992,9 +988,7 @@ $(document).ready(function(){
                         <p>CTO, FinTech Innovations</p>
                     </div>
                 </div>
-                <div class="testimonial-company">
-                    <img src="img/company-logo-3.png" alt="FinTech Innovations" loading="lazy">
-                </div>
+                
             </div>
             
             <!-- Testimonial 4 -->
@@ -1016,16 +1010,10 @@ $(document).ready(function(){
                         <p>Marketing Head, Retail Giants</p>
                     </div>
                 </div>
-                <div class="testimonial-company">
-                    <img src="img/company-logo-4.png" alt="Retail Giants" loading="lazy">
-                </div>
+                
             </div>
         </div>
-        
-        <div class="text-center mt-5">
-            <a href="#" class="btn btn-primary btn-lg px-4">View More Testimonials</a>
-        </div>
-    </div>
+</div>
 </div>
 
 <style>
@@ -1149,13 +1137,13 @@ $(document).ready(function(){
 }
 
 /* Slider Navigation */
-.testimonial-slider .owl-nav {
+.owl-nav {
     position: absolute;
     top: -80px;
     right: 0;
 }
 
-.testimonial-slider .owl-nav button {
+.owl-nav button {
     width: 40px;
     height: 40px;
     border-radius: 50% !important;
@@ -1166,7 +1154,7 @@ $(document).ready(function(){
     transition: all 0.3s ease;
 }
 
-.testimonial-slider .owl-nav button:hover {
+.owl-nav button:hover {
     background: #da251d !important;
     color: white !important;
 }
@@ -1183,7 +1171,7 @@ $(document).ready(function(){
         padding: 60px 0;
     }
     
-    .testimonial-slider .owl-nav {
+    .owl-nav {
         top: -70px;
     }
 }
@@ -1203,7 +1191,7 @@ $(document).ready(function(){
         top: -15px;
     }
     
-    .testimonial-slider .owl-nav {
+    .owl-nav {
         position: relative;
         top: 0;
         text-align: center;
@@ -1235,6 +1223,14 @@ $(document).ready(function(){
     }
 }
 </style>
+
+<!-- Required CSS and JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <script>
 $(document).ready(function(){
